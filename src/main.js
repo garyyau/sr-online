@@ -8,6 +8,7 @@ import App from './App'
 import router from './router'
 
 import { globals } from './config'
+import store from './store'
 
 Vue.config.productionTip = false
 
@@ -21,7 +22,8 @@ Object.keys(globals).forEach((key) => {
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
   components: { App },
+  router,
+  store,
   template: '<App/>'
 })
